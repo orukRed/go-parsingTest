@@ -1,8 +1,9 @@
-package laxer
+package lexer
 
 import (
-	"go/token"
 	"testing"
+
+	"monkey/token"
 )
 
 func TestNextToken(t *testing.T) {
@@ -22,7 +23,7 @@ func TestNextToken(t *testing.T) {
 		{token.SEMICOLON, ";"},
 		{token.EOF, ""},
 	}
-	l := new(input)
+	l := New(input)
 
 	for i, tt := range tests {
 		tok := l.NextToken()
