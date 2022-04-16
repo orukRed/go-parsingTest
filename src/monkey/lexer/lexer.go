@@ -1,8 +1,6 @@
 package lexer
 
-import (
-	"monkey/token"
-)
+import "go_paring/src/monkey/token"
 
 type Lexer struct {
 	input        string
